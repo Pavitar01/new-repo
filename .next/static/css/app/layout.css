@@ -1,0 +1,123 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./src/app/globals.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+:root {
+  --global-color-secondary: #000000;
+  --global-color-primary: #FFFFFF;
+  --global-font-giselle: "Giselle", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.medium {
+  font-weight: 500;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"src/styles/fonts/index.ts","import":"","arguments":[{"src":[{"path":"./giselle/FHGiselleTest-Light-BF65125161c6c7a.otf","weight":"300","style":"normal"},{"path":"./giselle/FHGiselleTest-LightItalic-BF6512516172cf5.otf","weight":"300","style":"italic"},{"path":"./giselle/FHGiselleTest-Regular-BF651251618a450.otf","weight":"400","style":"normal"},{"path":"./giselle/FHGiselleTest-RegularItalic-BF651251619195b.otf","weight":"400","style":"italic"},{"path":"./giselle/FHGiselleTest-Medium-BF65125161a3299.otf","weight":"500","style":"normal"},{"path":"./giselle/FHGiselleTest-MediumItalic-BF651251619118c.otf","weight":"500","style":"italic"},{"path":"./giselle/FHGiselleTest-SemiBold-BF6512516196777.otf","weight":"600","style":"normal"},{"path":"./giselle/FHGiselleTest-SemiBoldItalic-BF65125161a4c70.otf","weight":"600","style":"italic"},{"path":"./giselle/FHGiselleTest-Bold-BF651251616cfe1.otf","weight":"700","style":"normal"},{"path":"./giselle/FHGiselleTest-BoldItalic-BF65125161ac6d9.otf","weight":"700","style":"italic"},{"path":"./giselle/FHGiselleTest-Black-BF6512516189740.otf","weight":"900","style":"normal"},{"path":"./giselle/FHGiselleTest-BlackItalic-BF651251608f557.otf","weight":"900","style":"italic"}],"display":"swap","variable":"--font-giselle"}],"variableName":"giselle"} ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+font-family: 'giselle';
+src: url(/_next/static/media/cbc6747b9a6c9549-s.p.otf) format('opentype');
+font-display: swap;
+font-weight: 300;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'giselle';
+src: url(/_next/static/media/17cde0df7c261cf6-s.p.otf) format('opentype');
+font-display: swap;
+font-weight: 300;
+font-style: italic;
+}
+
+@font-face {
+font-family: 'giselle';
+src: url(/_next/static/media/83d404ff782695c8-s.p.otf) format('opentype');
+font-display: swap;
+font-weight: 400;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'giselle';
+src: url(/_next/static/media/f080c46eb5bd91ad-s.p.otf) format('opentype');
+font-display: swap;
+font-weight: 400;
+font-style: italic;
+}
+
+@font-face {
+font-family: 'giselle';
+src: url(/_next/static/media/ad9965416d0d7807-s.p.otf) format('opentype');
+font-display: swap;
+font-weight: 500;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'giselle';
+src: url(/_next/static/media/3f1c7cf560301aaf-s.p.otf) format('opentype');
+font-display: swap;
+font-weight: 500;
+font-style: italic;
+}
+
+@font-face {
+font-family: 'giselle';
+src: url(/_next/static/media/9dc4f19924f8cc73-s.p.otf) format('opentype');
+font-display: swap;
+font-weight: 600;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'giselle';
+src: url(/_next/static/media/42ade16a86546102-s.p.otf) format('opentype');
+font-display: swap;
+font-weight: 600;
+font-style: italic;
+}
+
+@font-face {
+font-family: 'giselle';
+src: url(/_next/static/media/bc768b05b27f16b2-s.p.otf) format('opentype');
+font-display: swap;
+font-weight: 700;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'giselle';
+src: url(/_next/static/media/4bde6af9a9b13291-s.p.otf) format('opentype');
+font-display: swap;
+font-weight: 700;
+font-style: italic;
+}
+
+@font-face {
+font-family: 'giselle';
+src: url(/_next/static/media/6153d7a1e9409358-s.p.otf) format('opentype');
+font-display: swap;
+font-weight: 900;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'giselle';
+src: url(/_next/static/media/dac971d8f0f2b401-s.p.otf) format('opentype');
+font-display: swap;
+font-weight: 900;
+font-style: italic;
+}@font-face {font-family: 'giselle Fallback';src: local("Arial");ascent-override: 107.13%;descent-override: 21.43%;line-gap-override: 21.43%;size-adjust: 93.35%
+}.__className_2077cb {font-family: 'giselle', 'giselle Fallback'
+}.__variable_2077cb {--font-giselle: 'giselle', 'giselle Fallback'
+}
+
