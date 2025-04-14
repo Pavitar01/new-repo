@@ -1,8 +1,8 @@
+
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import StoreProvider from "@/shared/providers/store-provider";
 import "./globals.scss";
-import { giselle } from "@/styles/fonts";
+import Header from "@/shared/ui/header";
 
 export const metadata: Metadata = {
   title: "Next project",
@@ -18,9 +18,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={giselle.variable}>
+    <html lang="en">
       <body suppressHydrationWarning={true}>
-        <StoreProvider>{children}</StoreProvider>
+        <StoreProvider>
+          <Header/>
+          {children}
+          
+          </StoreProvider>
       </body>
     </html>
   );

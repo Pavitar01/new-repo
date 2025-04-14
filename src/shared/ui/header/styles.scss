@@ -1,0 +1,45 @@
+.app-header-container{
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--global-color-secondary);
+    .action-links{
+        cursor: pointer;
+        display: flex;
+        gap: 24px;
+        max-width: max-content;
+        font-size: var(--font-size-16);
+        .app-header-link{
+            display: flex;
+            font-weight: var(--font-weight-semibold);
+            font-size: var(--font-size-14) !important;
+            color: var(--global-color-primary) !important;
+            text-decoration: none !important;
+            justify-content: center;
+            align-items: center;
+        }
+        .input-field-wrapper{
+            display: flex;
+            overflow: hidden;
+            border-radius: 50px;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--global-color-primary) !important;
+            .input-base{
+                width: 80%;
+                height: 25px;
+                padding: 2px;
+                background-color: var(--global-color-primary) !important;
+                font-size: var(--font-size-14) !important;
+            }
+            .input-field{
+                padding:5px;
+            }
+            .search-icon{
+                color: #42424260 !important
+            }
+        }
+    }
+}

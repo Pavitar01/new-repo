@@ -1,4 +1,4 @@
-// File: /home/zenmonk-info/Desktop/movie-app/src/app/layout.tsx
+// File: /home/pavitar01/Desktop/new-repo/src/app/layout.tsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
