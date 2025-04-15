@@ -1,8 +1,12 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 
-export async function GET() {
+export async function GET(req: NextRequest) {
+
   try {
-    const res = await fetch(`https://api.watchmode.com/v1/list-titles/?type=movie&sort_by=popularity_desc&apiKey=${process.env.WATCHMODE_API_KEY}`);
+    const page = parseInt(req.nextUrl.searchParams.get('page') || '1');
+    const limit = 5;
+    const offset = (page - 1) * limit;
+    const res = await fetch(`https://api.watchmode.com/v1/list-titles/?limit=${limit}&offset=${offset}&type=movie&sort_by=popularity_desc&apiKey=${process.env.WATCHMODE_API_KEY}`);
 
     if (!res.ok) {
       const error = await res.text();

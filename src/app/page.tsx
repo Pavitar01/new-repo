@@ -1,5 +1,6 @@
 
 'use client'
+import HeroSection from '@/modules/home/components/hero-section'
 import { SwitchLanguage } from '@/shared/ui'
 import { useTranslation } from 'react-i18next'
 
@@ -7,8 +8,7 @@ const Page = () => {
   const { t } = useTranslation()
   return (
     <div>
-      Welcome to {t('AppName')}
-      <SwitchLanguage />
+      <HeroSection />
     </div>
   )
 }
@@ -16,4 +16,3 @@ const Page = () => {
 export default Page
 
 
-  
