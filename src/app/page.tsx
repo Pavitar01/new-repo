@@ -1,7 +1,6 @@
 
 'use client'
 import HeroSection from '@/modules/home/components/hero-section'
-import { SwitchLanguage } from '@/shared/ui'
 import { useTranslation } from 'react-i18next'
 
 const Page = () => {

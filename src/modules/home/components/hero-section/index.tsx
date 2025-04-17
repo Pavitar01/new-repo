@@ -1,20 +1,32 @@
-import { Box, CircularProgress } from '@mui/material'
-import "./styles.scss"
-import { useTrending } from '@/shared/hooks/useTrending';
+import { useReleases } from '@/shared/hooks/useReleases';
+import { Box, CircularProgress } from '@mui/material';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+import "./styles.scss";
+import Image from 'next/image';
+
+
 const HeroSection = () => {
+  const { releases, error, isDataFetching } = useReleases();
 
-  const { trending, error, isDataFetching } = useTrending();
   return (
-    <Box className="hero-section-wrapper" sx={{ backgroundImage: "url(/images/hero-section.jpg)" }}>
-      {
-        isDataFetching ? <CircularProgress /> : trending.length > 0 ? <>
-        {trending.map((trending)=>{
-          return<>{trending.title}</>
-        })}
-        </> : <></>
-      }
-    </Box>
-  )
-}
+    <div className="hero-section-wrapper">
+      {isDataFetching ? (
+        <CircularProgress />
+      ) : releases && releases.length > 0 ? (
+        <Carousel autoPlay>
+          {releases.map((release) => (
+            <Box component="div" key={release.id} className="carousel-item">
+              <Image alt={release.title} src={release.poster_url} fill/>
+              <p className="legend">Legend 1</p>
+            </Box>
+          ))}
+        </Carousel>
+      ) : (
+        <p>No releases found.</p>
+      )}
+    </div>
+  );
+};
 
-export default HeroSection
+export default HeroSection;

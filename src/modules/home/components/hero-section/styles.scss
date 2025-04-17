@@ -1,0 +1,28 @@
+
+.hero-section-wrapper {
+    width: 100%;
+    height: calc(100vh - 64px);
+    position: relative;
+    .carousel-item {
+      height:  calc(100vh - 64px);
+      &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        height:  calc(100vh - 64px);
+        background-color: rgba(0, 0, 0, 0.688);
+      }
+      & > *{
+        z-index: 10;
+      }
+      img {
+        width: 100%;
+        height:  calc(100vh - 64px);
+        object-fit: cover;
+      }
+    }
+  }
+  

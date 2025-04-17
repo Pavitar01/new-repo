@@ -11,7 +11,7 @@ const Header = () => {
             <Box className="action-links">
                 {actionList.map((action, index) => {
                     return action.type === "link" ? <Link className="app-header-link" href={action.href as string} key={index}>{action.name}</Link> :
-                        <Box className="input-field-wrapper">
+                        <Box className="input-field-wrapper" key={index}>
                             <InputBase
                                 className="input-base" inputProps={{
                                     className: "input-field"

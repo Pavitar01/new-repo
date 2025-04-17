@@ -1,4 +1,3 @@
-// app/api/top-rated/route.ts
 import { NextRequest, NextResponse } from 'next/server';
 
 export async function GET(req: NextRequest) {
@@ -14,14 +13,12 @@ export async function GET(req: NextRequest) {
     const data = await res.json();
 
     // Only return minimal data
-    const releases = data.releases.map((title: any) => ({
-      id: title.id,
-      title: title.title,
-      year: title.year,
-      type: title.type,
+    const updatedReleases = data.releases.map((release: Releases) => ({
+      ...release,
+      poster_url: release.poster_url?.replace('_w185', '_w780'), // or '_w780 /_w185'
     }));
 
-    return NextResponse.json({ page, releases });
+    return NextResponse.json({ page, releases:updatedReleases });
   } catch (error) {
     console.error('Top-rated fetch error:', error);
     return NextResponse.json({ error: 'Failed to fetch releases' }, { status: 500 });
